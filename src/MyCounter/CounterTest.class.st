@@ -52,7 +52,7 @@ self assert: c count equals: 5.
 { #category : #tests }
 CounterTest >> testStartingAt5Increment1 [
 
-| c |.
+| c |
 c := Counter startingAt: 5.
 self assert: (c increment; count) equals: 6.
 ]
