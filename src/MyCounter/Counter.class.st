@@ -49,3 +49,11 @@ Counter >> initialize [
 super initialize.
 count := 0.
 ]
+
+{ #category : #accessing }
+Counter >> printOn: aStream [
+
+super printOn: aStream.
+aStream nextPutAll: 'with Value ', self count printString.
+aStream cr.
+]
